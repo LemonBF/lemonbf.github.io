@@ -1,0 +1,326 @@
+{
+  "es": {
+    "meta": {
+      "lang": "es",
+      "title": "Resume"
+    },
+    "header": {
+      "jobTitle": "Full Stack Developer"
+    },
+    "summary": {
+      "title": "Resumen",
+      "content": "Desarrollador Full Stack con casi 10 años de experiencia en el diseño, desarrollo y mantenimiento de aplicaciones web, móviles y de escritorio. Especializado en backend con Python (Django) y c# (.NET), así como en la creación de microservicios, herramientas CLI y soluciones integradas con bases de datos como PostgreSQL y SQL Server. Amplia experiencia en optimización de procesos, migración de tecnologías, integración de APIs y automatización de tareas. Me destaco por una mentalidad analítica, enfoque en la calidad del código y capacidad para trabajar en equipos multidisciplinares. Comprometido con la mejora continua y el aprendizaje constante, actualmente complemento mi práctica profesional con estudios en Ingeniería Informática."
+    },
+    "experience": {
+      "title": "Experiencia laboral",
+      "job1_title": "Backend Developer",
+      "job1_company": "Fundcraft",
+      "job1_period": "2023 - Presente",
+      "job1_description": "Responsable del desarrollo backend de nuevos módulos para una plataforma financiera SaaS, optimizando procesos clave y mejorando la calidad del producto final.",
+      "job1_achievements_title": "Funciones y logros destacados:",
+      "job1_achievement_1": "Desarrollo de nuevos módulos para la plataforma principal.",
+      "job1_achievement_2": "Automatización de tareas mediante herramientas CLI internas, mejorando la eficiencia de los procesos de desarrollo y despliegue.",
+      "job1_achievement_3": "Implementación y gestión de la comunicación entre microservicios.",
+      "job1_achievement_4": "Migré y optimicé múltiples funciones críticas de la aplicación, mejorando la mantenibilidad y reduciendo el tiempo de carga de queries SQL complejas.",
+      "job1_achievement_5": "Implementé pruebas unitarias y mejoras en la cobertura del código, contribuyendo a una reducción de bugs reportados en QA.",
+      "job1_achievement_6": "Participé activamente en decisiones técnicas, code reviews y diseño de arquitectura para nuevos features.",
+      "job1_tech_title": "Tecnologías utilizadas:",
+      "job2_title": "Full Stack Developer",
+      "job2_company": "Sistemes Informàtics ICON S.L.",
+      "job2_period": "2018 - 2023",
+      "job2_description": "Encargado del desarrollo y mantenimiento de aplicaciones web, móviles y de escritorio para soluciones empresariales (ERP/CRM), colaborando en todo el ciclo de vida del software.",
+      "job2_achievements_title": "Logros y responsabilidades clave:",
+      "job2_achievement_1": "Gestione proyectos de aplicaciones web de inicio a fin.",
+      "job2_achievement_2": "Diseñé e implementé nuevos módulos para sistemas de gestión empresarial (ERP), mejorando la experiencia del usuario final y reduciendo tiempos de respuesta en un 30%.",
+      "job2_achievement_3": "Migré plataformas legacy a tecnologías modernas, incluyendo actualizaciones de .NET y rediseño de UI con Angular, logrando una mejora en estabilidad y usabilidad.",
+      "job2_achievement_4": "Implementé diversos servicios de Azure dentro de soluciones.",
+      "job2_achievement_5": "Participé en proyectos móviles multiplataforma y soporte de sistemas de escritorio, garantizando compatibilidad y rendimiento entre dispositivos.",
+      "job2_achievement_6": "Desarrollé conectores personalizados para integrar múltiples servicios y APIs (bancos, gestores documentales, etc.), optimizando flujos de datos y procesos automatizados.",
+      "job2_tech_title": "Tecnologías utilizadas:",
+      "job3_title": "Alumno Practicas",
+      "job3_company": "Zona Digital",
+      "job3_period": "2015",
+      "job3_description": "Realicé las prácticas correspondientes a mis estudios de grado medio en Sistemas Microinformáticos y Redes mientras cursaba dicha formación.",
+      "job3_achievements_title": "Logros:",
+      "job3_achievements_content": "Durante los varios meses que estuve ahí, aprendí habilidades para tratar con personas cara al público, adquirí conocimientos básicos en la creación de páginas web y pude aplicar mis estudios en sistemas y redes.",
+      "job3_tech_title": "Tecnologías utilizadas:"
+    },
+    "skills": {
+      "title": "Habilidad & Herramientas",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "other": "Otros"
+    },
+    "education": {
+      "title": "Educación",
+      "degree1": "Grado en Ingeniería Informatica",
+      "degree1_org": "Universidad de Girona",
+      "degree1_time": "2019 - Present",
+      "degree2": "Ciclo Superior: Desarrollo de aplicaciones WEB",
+      "degree2_org": "IES Cendrassos",
+      "degree2_time": "2016 - 2018",
+      "degree3": "Ciclo Medio: Sistemas Microinformaticos y Redes",
+      "degree3_org": "IES Cendrassos",
+      "degree3_time": "2013 - 2015"
+    },
+    "languages": {
+      "title": "Idiomas",
+      "ukrainian": "Ucraniano",
+      "ukrainian_level": "(Nativo)",
+      "russian": "Ruso",
+      "spanish": "Español",
+      "catalan": "Catala",
+      "english": "Ingles",
+      "english_level": "(Alto)"
+    },
+    "interests": {
+      "title": "Intereses",
+      "gaming": "Gaming",
+      "tech": "Tecnología",
+      "cooking": "Cocina"
+    }
+  },
+  "en": {
+    "meta": {
+      "lang": "en",
+      "title": "Resume"
+    },
+    "header": {
+      "jobTitle": "Full Stack Developer"
+    },
+    "summary": {
+      "title": "Summary",
+      "content": "Full Stack Developer with nearly 10 years of experience in designing, developing, and maintaining web, mobile, and desktop applications. Specialized in backend development with Python (Django) and C# (.NET), as well as creating microservices, CLI tools, and integrated solutions with databases such as PostgreSQL and SQL Server. Extensive experience in process optimization, technology migration, API integration, and task automation. I stand out for my analytical mindset, focus on code quality, and ability to work in multidisciplinary teams. Committed to continuous improvement and constant learning, currently complementing my professional practice with studies in Computer Engineering."
+    },
+    "experience": {
+      "title": "Work Experience",
+      "job1_title": "Backend Developer",
+      "job1_company": "Fundcraft",
+      "job1_period": "2023 - Present",
+      "job1_description": "Responsible for backend development of new modules for a SaaS financial platform, optimizing key processes and improving the quality of the final product.",
+      "job1_achievements_title": "Key Functions and Achievements:",
+      "job1_achievement_1": "Development of new modules for the main platform.",
+      "job1_achievement_2": "Task automation through internal CLI tools, improving the efficiency of development and deployment processes.",
+      "job1_achievement_3": "Implementation and management of communication between microservices.",
+      "job1_achievement_4": "Migrated and optimized multiple critical application functions, improving maintainability and reducing load time for complex SQL queries.",
+      "job1_achievement_5": "Implemented unit tests and improvements in code coverage, contributing to a reduction in bugs reported in QA.",
+      "job1_achievement_6": "Actively participated in technical decisions, code reviews, and architecture design for new features.",
+      "job1_tech_title": "Technologies Used:",
+      "job2_title": "Full Stack Developer",
+      "job2_company": "Sistemes Informàtics ICON S.L.",
+      "job2_period": "2018 - 2023",
+      "job2_description": "In charge of development and maintenance of web, mobile, and desktop applications for enterprise solutions (ERP/CRM), collaborating throughout the software lifecycle.",
+      "job2_achievements_title": "Key Achievements and Responsibilities:",
+      "job2_achievement_1": "Managed web application projects from start to finish.",
+      "job2_achievement_2": "Designed and implemented new modules for enterprise resource planning (ERP) systems, improving end-user experience and reducing response times by 30%.",
+      "job2_achievement_3": "Migrated legacy platforms to modern technologies, including .NET updates and UI redesign with Angular, achieving improvements in stability and usability.",
+      "job2_achievement_4": "Implemented various Azure services within solutions.",
+      "job2_achievement_5": "Participated in cross-platform mobile projects and desktop system support, ensuring compatibility and performance across devices.",
+      "job2_achievement_6": "Developed custom connectors to integrate multiple services and APIs (banks, document managers, etc.), optimizing data flows and automated processes.",
+      "job2_tech_title": "Technologies Used:",
+      "job3_title": "Intern",
+      "job3_company": "Zona Digital",
+      "job3_period": "2015",
+      "job3_description": "Completed the internship corresponding to my intermediate level studies in Microcomputer Systems and Networks while pursuing this training.",
+      "job3_achievements_title": "Achievements:",
+      "job3_achievements_content": "During the several months I was there, I learned skills for dealing with people face-to-face, acquired basic knowledge in creating web pages, and was able to apply my studies in systems and networks.",
+      "job3_tech_title": "Technologies Used:"
+    },
+    "skills": {
+      "title": "Skills & Tools",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "other": "Others"
+    },
+    "education": {
+      "title": "Education",
+      "degree1": "Bachelor's Degree in Computer Engineering",
+      "degree1_org": "University of Girona",
+      "degree1_time": "2019 - Present",
+      "degree2": "Higher Level: Web Application Development",
+      "degree2_org": "IES Cendrassos",
+      "degree2_time": "2016 - 2018",
+      "degree3": "Intermediate Level: Microcomputer Systems and Networks",
+      "degree3_org": "IES Cendrassos",
+      "degree3_time": "2013 - 2015"
+    },
+    "languages": {
+      "title": "Languages",
+      "ukrainian": "Ukrainian",
+      "ukrainian_level": "(Native)",
+      "russian": "Russian",
+      "spanish": "Spanish",
+      "catalan": "Catalan",
+      "english": "English",
+      "english_level": "(Advanced)"
+    },
+    "interests": {
+      "title": "Interests",
+      "gaming": "Gaming",
+      "tech": "Technology",
+      "cooking": "Cooking"
+    }
+  },
+  "ca": {
+    "meta": {
+      "lang": "ca",
+      "title": "Currículum"
+    },
+    "header": {
+      "jobTitle": "Desenvolupador Full Stack"
+    },
+    "summary": {
+      "title": "Resum",
+      "content": "Desenvolupador Full Stack amb gairebé 10 anys d'experiència en el disseny, desenvolupament i manteniment d'aplicacions web, mòbils i d'escriptori. Especialitzat en backend amb Python (Django) i C# (.NET), així com en la creació de microserveis, eines CLI i solucions integrades amb bases de dades com PostgreSQL i SQL Server. Àmplia experiència en optimització de processos, migració de tecnologies, integració d'APIs i automatització de tasques. Em destaco per una mentalitat analítica, enfocament en la qualitat del codi i capacitat per treballar en equips multidisciplinars. Compromès amb la millora contínua i l'aprenentatge constant, actualment complemento la meva pràctica professional amb estudis en Enginyeria Informàtica."
+    },
+    "experience": {
+      "title": "Experiència laboral",
+      "job1_title": "Desenvolupador Backend",
+      "job1_company": "Fundcraft",
+      "job1_period": "2023 - Present",
+      "job1_description": "Responsable del desenvolupament backend de nous mòduls per a una plataforma financera SaaS, optimitzant processos clau i millorant la qualitat del producte final.",
+      "job1_achievements_title": "Funcions i assoliments destacats:",
+      "job1_achievement_1": "Desenvolupament de nous mòduls per a la plataforma principal.",
+      "job1_achievement_2": "Automatització de tasques mitjançant eines CLI internes, millorant l'eficiència dels processos de desenvolupament i desplegament.",
+      "job1_achievement_3": "Implementació i gestió de la comunicació entre microserveis.",
+      "job1_achievement_4": "Vaig migrar i optimitzar múltiples funcions crítiques de l'aplicació, millorant la mantenibilitat i reduint el temps de càrrega de queries SQL complexes.",
+      "job1_achievement_5": "Vaig implementar proves unitàries i millores en la cobertura del codi, contribuint a una reducció de bugs reportats en QA.",
+      "job1_achievement_6": "Vaig participar activament en decisions tècniques, code reviews i disseny d'arquitectura per a nous features.",
+      "job1_tech_title": "Tecnologies utilitzades:",
+      "job2_title": "Desenvolupador Full Stack",
+      "job2_company": "Sistemes Informàtics ICON S.L.",
+      "job2_period": "2018 - 2023",
+      "job2_description": "Encarregat del desenvolupament i manteniment d'aplicacions web, mòbils i d'escriptori per a solucions empresarials (ERP/CRM), col·laborant en tot el cicle de vida del programari.",
+      "job2_achievements_title": "Assoliments i responsabilitats clau:",
+      "job2_achievement_1": "Vaig gestionar projectes d'aplicacions web d'inici a fi.",
+      "job2_achievement_2": "Vaig dissenyar i implementar nous mòduls per a sistemes de gestió empresarial (ERP), millorant l'experiència de l'usuari final i reduint temps de resposta en un 30%.",
+      "job2_achievement_3": "Vaig migrar plataformes legacy a tecnologies modernes, incloent actualitzacions de .NET i redisseny d'UI amb Angular, aconseguint una millora en estabilitat i usabilitat.",
+      "job2_achievement_4": "Vaig implementar diversos serveis d'Azure dins de solucions.",
+      "job2_achievement_5": "Vaig participar en projectes mòbils multiplataforma i suport de sistemes d'escriptori, garantint compatibilitat i rendiment entre dispositius.",
+      "job2_achievement_6": "Vaig desenvolupar connectors personalitzats per integrar múltiples serveis i APIs (bancs, gestors documentals, etc.), optimitzant fluxos de dades i processos automatitzats.",
+      "job2_tech_title": "Tecnologies utilitzades:",
+      "job3_title": "Alumne Pràctiques",
+      "job3_company": "Zona Digital",
+      "job3_period": "2015",
+      "job3_description": "Vaig realitzar les pràctiques corresponents als meus estudis de grau mitjà en Sistemes Microinformàtics i Xarxes mentre cursava aquesta formació.",
+      "job3_achievements_title": "Assoliments:",
+      "job3_achievements_content": "Durant els diversos mesos que vaig estar allà, vaig aprendre habilitats per tractar amb persones cara al públic, vaig adquirir coneixements bàsics en la creació de pàgines web i vaig poder aplicar els meus estudis en sistemes i xarxes.",
+      "job3_tech_title": "Tecnologies utilitzades:"
+    },
+    "skills": {
+      "title": "Habilitats i Eines",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "other": "Altres"
+    },
+    "education": {
+      "title": "Educació",
+      "degree1": "Grau en Enginyeria Informàtica",
+      "degree1_org": "Universitat de Girona",
+      "degree1_time": "2019 - Present",
+      "degree2": "Cicle Superior: Desenvolupament d'aplicacions WEB",
+      "degree2_org": "IES Cendrassos",
+      "degree2_time": "2016 - 2018",
+      "degree3": "Cicle Mitjà: Sistemes Microinformàtics i Xarxes",
+      "degree3_org": "IES Cendrassos",
+      "degree3_time": "2013 - 2015"
+    },
+    "languages": {
+      "title": "Idiomes",
+      "ukrainian": "Ucraïnès",
+      "ukrainian_level": "(Natiu)",
+      "russian": "Rus",
+      "spanish": "Espanyol",
+      "catalan": "Català",
+      "english": "Anglès",
+      "english_level": "(Alt)"
+    },
+    "interests": {
+      "title": "Interessos",
+      "gaming": "Jocs",
+      "tech": "Tecnologia",
+      "cooking": "Cuina"
+    }
+  },
+  "uk": {
+    "meta": {
+      "lang": "uk",
+      "title": "Резюме"
+    },
+    "header": {
+      "jobTitle": "Full Stack Розробник"
+    },
+    "summary": {
+      "title": "Резюме",
+      "content": "Full Stack розробник з майже 10-річним досвідом у проектуванні, розробці та підтримці веб-, мобільних та настільних додатків. Спеціалізація на backend розробці з Python (Django) та C# (.NET), а також створення мікросервісів, CLI інструментів та інтегрованих рішень з базами даних, такими як PostgreSQL та SQL Server. Великий досвід в оптимізації процесів, міграції технологій, інтеграції API та автоматизації завдань. Виділяюся аналітичним мисленням, орієнтацією на якість коду та здатністю працювати в мультидисциплінарних командах. Прихильник постійного вдосконалення та навчання, наразі поєдную професійну практику з навчанням на спеціальності Комп'ютерна інженерія."
+    },
+    "experience": {
+      "title": "Досвід роботи",
+      "job1_title": "Backend Розробник",
+      "job1_company": "Fundcraft",
+      "job1_period": "2023 - Теперішній час",
+      "job1_description": "Відповідальний за backend розробку нових модулів для фінансової SaaS платформи, оптимізуючи ключові процеси та покращуючи якість кінцевого продукту.",
+      "job1_achievements_title": "Ключові функції та досягнення:",
+      "job1_achievement_1": "Розробка нових модулів для основної платформи.",
+      "job1_achievement_2": "Автоматизація завдань за допомогою внутрішніх CLI інструментів, покращуючи ефективність процесів розробки та розгортання.",
+      "job1_achievement_3": "Реалізація та управління комунікацією між мікросервісами.",
+      "job1_achievement_4": "Мігрував та оптимізував декілька критичних функцій додатку, покращуючи підтримуваність та зменшуючи час завантаження складних SQL запитів.",
+      "job1_achievement_5": "Впровадив модульні тести та покращив покриття коду, сприяючи зменшенню кількості помилок, виявлених у QA.",
+      "job1_achievement_6": "Активно брав участь у технічних рішеннях, code reviews та проектуванні архітектури для нових функцій.",
+      "job1_tech_title": "Використані технології:",
+      "job2_title": "Full Stack Розробник",
+      "job2_company": "Sistemes Informàtics ICON S.L.",
+      "job2_period": "2018 - 2023",
+      "job2_description": "Відповідальний за розробку та підтримку веб-, мобільних та настільних додатків для корпоративних рішень (ERP/CRM), співпрацюючи на всіх етапах життєвого циклу програмного забезпечення.",
+      "job2_achievements_title": "Ключові досягнення та обов'язки:",
+      "job2_achievement_1": "Керував проектами веб-додатків від початку до кінця.",
+      "job2_achievement_2": "Спроектував та впровадив нові модулі для систем планування ресурсів підприємства (ERP), покращуючи досвід кінцевого користувача та зменшуючи час відгуку на 30%.",
+      "job2_achievement_3": "Мігрував застарілі платформи на сучасні технології, включаючи оновлення .NET та редизайн UI з Angular, досягнувши покращення стабільності та зручності використання.",
+      "job2_achievement_4": "Впровадив різноманітні сервіси Azure в рішення.",
+      "job2_achievement_5": "Брав участь у кросплатформних мобільних проектах та підтримці настільних систем, забезпечуючи сумісність та продуктивність на різних пристроях.",
+      "job2_achievement_6": "Розробив користувацькі конектори для інтеграції декількох сервісів та API (банки, системи управління документами тощо), оптимізуючи потоки даних та автоматизовані процеси.",
+      "job2_tech_title": "Використані технології:",
+      "job3_title": "Студент-практикант",
+      "job3_company": "Zona Digital",
+      "job3_period": "2015",
+      "job3_description": "Проходив практику відповідно до моїх студій середнього рівня з мікрокомп'ютерних систем та мереж під час навчання.",
+      "job3_achievements_title": "Досягнення:",
+      "job3_achievements_content": "Протягом декількох місяців, які я там перебував, навчився навичкам спілкування з людьми віч-на-віч, отримав базові знання зі створення веб-сторінок та зміг застосувати свої знання в галузі систем та мереж.",
+      "job3_tech_title": "Використані технології:"
+    },
+    "skills": {
+      "title": "Навички та Інструменти",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "other": "Інше"
+    },
+    "education": {
+      "title": "Освіта",
+      "degree1": "Ступінь бакалавра з комп'ютерної інженерії",
+      "degree1_org": "Університет Жирони",
+      "degree1_time": "2019 - Теперішній час",
+      "degree2": "Вищий рівень: Розробка веб-додатків",
+      "degree2_org": "IES Cendrassos",
+      "degree2_time": "2016 - 2018",
+      "degree3": "Середній рівень: Мікрокомп'ютерні системи та мережі",
+      "degree3_org": "IES Cendrassos",
+      "degree3_time": "2013 - 2015"
+    },
+    "languages": {
+      "title": "Мови",
+      "ukrainian": "Українська",
+      "ukrainian_level": "(Рідна)",
+      "russian": "Російська",
+      "spanish": "Іспанська",
+      "catalan": "Каталанська",
+      "english": "Англійська",
+      "english_level": "(Високий)"
+    },
+    "interests": {
+      "title": "Інтереси",
+      "gaming": "Ігри",
+      "tech": "Технології",
+      "cooking": "Кулінарія"
+    }
+  }
+}

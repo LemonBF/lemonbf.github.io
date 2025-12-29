@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"C:\\\\Users\\\\dholota\\\\source\\\\repos\\\\lemonbf.github\" remote -v)"
+    ]
+  }
+}
