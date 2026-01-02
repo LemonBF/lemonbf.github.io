@@ -1,0 +1,182 @@
+/* Dark Mode Toggle Styles */
+.dark-mode-toggle-wrapper {
+    margin-top: 12px;
+}
+
+.dark-mode-toggle {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70px;
+    height: 32px;
+    padding: 4px 6px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.dark-mode-toggle:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-1px);
+}
+
+.toggle-icon {
+    font-size: 16px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.sun-icon {
+    margin-left: -1px;
+}
+
+.moon-icon {
+    margin-right: -1px;
+}
+
+.toggle-slider {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: #434E5E;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode-toggle.active .toggle-slider {
+    transform: translate(38px, -50%);
+}
+
+.dark-mode-toggle.active .sun-icon {
+    opacity: 0.4;
+}
+
+.dark-mode-toggle .moon-icon {
+    opacity: 0.4;
+}
+
+.dark-mode-toggle.active .moon-icon {
+    opacity: 1;
+}
+
+/* Dark Mode Color Variables */
+:root {
+    /* Light mode (default) */
+    --bg-primary: #fff;
+    --bg-secondary: #F7F8FA;
+    --bg-header: #434E5E;
+    --text-primary: #212529;
+    --text-secondary: #6c757d;
+    --text-light: rgba(255, 255, 255, 0.9);
+    --link-color: rgba(255, 255, 255, 0.6);
+    --link-hover: #fff;
+    --border-color: #dee2e6;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --bg-header: #2d2d2d;
+    --text-primary: #e4e4e4;
+    --text-secondary: #b0b0b0;
+    --text-light: rgba(255, 255, 255, 0.9);
+    --link-color: rgba(255, 255, 255, 0.7);
+    --link-hover: #fff;
+    --border-color: #444;
+    --shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Apply dark mode styles */
+[data-theme="dark"] body {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .resume-wrapper-inner {
+    background: var(--bg-primary) !important;
+    box-shadow: 0 0.5rem 1rem var(--shadow) !important;
+}
+
+[data-theme="dark"] .resume-header {
+    background: var(--bg-header) !important;
+}
+
+[data-theme="dark"] .resume-body {
+    background: var(--bg-primary);
+}
+
+[data-theme="dark"] .resume-section-title {
+    color: var(--text-primary);
+    border-bottom-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4 {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] p,
+[data-theme="dark"] li,
+[data-theme="dark"] .resume-skill-name,
+[data-theme="dark"] .resume-degree,
+[data-theme="dark"] .resume-degree-org,
+[data-theme="dark"] .resume-lang-name {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .resume-position-time,
+[data-theme="dark"] .resume-degree-time,
+[data-theme="dark"] .text-muted {
+    color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .resume-timeline-item-desc {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .badge {
+    background-color: #3d4752 !important;
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .progress {
+    background-color: #3d4752;
+}
+
+[data-theme="dark"] .theme-progress-bar-dark {
+    background-color: #5a6c7d !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .dark-mode-toggle-wrapper {
+        margin-top: 8px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .dark-mode-toggle {
+        width: 70px;
+        height: 32px;
+    }
+}
