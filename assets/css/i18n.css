@@ -1,48 +1,52 @@
 /* Language Switcher Styles */
 .language-switcher {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    margin-top: 0;
+}
+
+.lang-buttons-desktop {
     display: flex;
-    gap: 8px;
-    z-index: 100;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 8px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.lang-dropdown-mobile {
+    display: none;
 }
 
 .lang-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
-    padding: 8px 12px;
+    gap: 3px;
+    padding: 6px 10px;
     border: 2px solid transparent;
-    border-radius: 6px;
-    background: white;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
     cursor: pointer;
     transition: all 0.2s ease;
     font-family: inherit;
 }
 
 .lang-btn:hover {
-    background: #f8f9fa;
-    border-color: #58677c;
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-1px);
 }
 
 .lang-btn.active {
-    border-color: #434E5E;
-    background: #f0f4f8;
+    border-color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .flag-icon {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1;
 }
 
 .lang-text {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 600;
     color: #434E5E;
     letter-spacing: 0.5px;
@@ -51,24 +55,35 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .language-switcher {
-        top: 10px;
-        right: 10px;
-        flex-direction: row;
-        gap: 4px;
-        padding: 4px;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 8px;
     }
 
-    .lang-btn {
-        padding: 6px 8px;
-        gap: 2px;
+    .lang-buttons-desktop {
+        display: none;
     }
 
-    .flag-icon {
-        font-size: 20px;
+    .lang-dropdown-mobile {
+        display: block;
+        padding: 6px 12px;
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.95);
+        color: #434E5E;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        outline: none;
+        font-family: inherit;
+        width: 100%;
+        max-width: 200px;
     }
 
-    .lang-text {
-        font-size: 10px;
+    .lang-dropdown-mobile:focus {
+        border-color: rgba(255, 255, 255, 1);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
     }
 }
 

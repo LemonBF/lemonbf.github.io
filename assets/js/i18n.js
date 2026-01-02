@@ -56,9 +56,10 @@ const i18n = {
     },
 
     /**
-     * Set up event listeners for language buttons
+     * Set up event listeners for language buttons and dropdown
      */
     setupEventListeners() {
+        // Desktop buttons
         const langButtons = document.querySelectorAll('.lang-btn');
         langButtons.forEach(button => {
             button.addEventListener('click', (e) => {
@@ -68,6 +69,17 @@ const i18n = {
                 }
             });
         });
+
+        // Mobile dropdown
+        const langDropdown = document.getElementById('langDropdown');
+        if (langDropdown) {
+            langDropdown.addEventListener('change', (e) => {
+                const lang = e.target.value;
+                if (lang) {
+                    this.setLanguage(lang);
+                }
+            });
+        }
     },
 
     /**
@@ -174,9 +186,10 @@ const i18n = {
     },
 
     /**
-     * Update active state of language buttons
+     * Update active state of language buttons and dropdown
      */
     updateActiveButton(lang) {
+        // Update desktop buttons
         const langButtons = document.querySelectorAll('.lang-btn');
         langButtons.forEach(button => {
             const buttonLang = button.getAttribute('data-lang');
@@ -186,6 +199,12 @@ const i18n = {
                 button.classList.remove('active');
             }
         });
+
+        // Update mobile dropdown
+        const langDropdown = document.getElementById('langDropdown');
+        if (langDropdown) {
+            langDropdown.value = lang;
+        }
     }
 };
 
