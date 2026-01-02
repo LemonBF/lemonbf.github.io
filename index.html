@@ -24,6 +24,10 @@
     <link rel="stylesheet" href="assets/css/dark-mode.css">
     <script defer src="assets/js/dark-mode.js"></script>
 
+    <!-- PDF Download Support -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script defer src="assets/js/pdf-download.js"></script>
+
 </head> 
 
 <body>	
@@ -80,12 +84,16 @@
 								    </select>
 							    </div>
 
-							    <!-- Dark Mode Toggle -->
-							    <div class="dark-mode-toggle-wrapper">
+							    <!-- Dark Mode Toggle & PDF Download -->
+							    <div class="controls-wrapper">
 								    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
 									    <span class="toggle-icon sun-icon">☀️</span>
 									    <span class="toggle-slider"></span>
 									    <span class="toggle-icon moon-icon">🌙</span>
+								    </button>
+								    <button id="downloadPdfBtn" class="download-pdf-btn" aria-label="Download as PDF">
+									    <i class="fas fa-file-pdf"></i>
+									    <span class="btn-text">PDF</span>
 								    </button>
 							    </div>
 						    </div><!--//secondary-info-->
@@ -137,6 +145,7 @@
 											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Postgress</span></li>
 											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Rabbit</span></li>
 											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Opensearch</span></li>
+												<li class="list-inline-item"><span class="badge bg-secondary badge-pill">FastAPI</span></li>
 										    </ul>
 									    </div><!--//resume-timeline-item-desc-->
 
@@ -234,14 +243,7 @@
 								        <li class="mb-2">
 								            <div class="resume-skill-name">React</div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
-								       
-								        <li class="mb-2">
-								            <div class="resume-skill-name">HTML/CSS/SASS/LESS</div>
-									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 							        </ul>
@@ -259,7 +261,7 @@
                          <li class="mb-2">
 								            <div class="resume-skill-name">Python</div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 	

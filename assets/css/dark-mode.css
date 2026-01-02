@@ -1,6 +1,9 @@
-/* Dark Mode Toggle Styles */
-.dark-mode-toggle-wrapper {
+/* Controls Wrapper (Dark Mode Toggle & PDF Download) */
+.controls-wrapper {
     margin-top: 12px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
 .dark-mode-toggle {
@@ -73,6 +76,59 @@
 
 .dark-mode-toggle.active .moon-icon {
     opacity: 1;
+}
+
+/* PDF Download Button */
+.download-pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.download-pdf-btn:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.download-pdf-btn:active {
+    transform: translateY(0);
+}
+
+.download-pdf-btn i {
+    font-size: 18px;
+}
+
+.download-pdf-btn .btn-text {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+/* Loading state for PDF button */
+.download-pdf-btn.loading {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.download-pdf-btn.loading::after {
+    content: '...';
+    animation: loading-dots 1.5s infinite;
+}
+
+@keyframes loading-dots {
+    0%, 20% { content: '.'; }
+    40% { content: '..'; }
+    60%, 100% { content: '...'; }
 }
 
 /* Dark Mode Color Variables */
@@ -169,14 +225,22 @@
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-    .dark-mode-toggle-wrapper {
+    .controls-wrapper {
         margin-top: 8px;
-        display: flex;
+        flex-wrap: wrap;
         justify-content: flex-start;
     }
 
     .dark-mode-toggle {
         width: 70px;
         height: 32px;
+    }
+
+    .download-pdf-btn {
+        padding: 6px 10px;
+    }
+
+    .download-pdf-btn .btn-text {
+        font-size: 11px;
     }
 }

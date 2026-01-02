@@ -22,6 +22,7 @@ The site includes a custom internationalization (i18n) system supporting:
 - **Ukrainian (UK)** 🇺🇦
 
 Language selection is:
+
 - Automatically detected from browser preferences
 - Saved to localStorage for persistence
 - Easily switchable via dropdown (mobile) or buttons (desktop)
@@ -68,6 +69,7 @@ Language selection is:
 ## 🎨 Visual Design
 
 Inspired by modern CV templates from:
+
 - zety.es
 - novoresume.com
 
@@ -101,5 +103,6 @@ Personal project - All rights reserved
 ## 👤 Author
 
 **Dmytro Holota**
+
 - LinkedIn: [linkedin.com/in/dholota](https://www.linkedin.com/in/dholota)
-- Email: dimaholota@gmail.com
+- Email: <dimaholota@gmail.com>
