@@ -8,25 +8,38 @@ This is a static personal resume/CV website for Dmytro Holota, hosted on GitHub 
 
 **Target audience**: HR professionals and recruiters looking for detailed information about the resume owner.
 
+**Key Features**:
+- Multi-language support (Spanish, English, Catalan, Ukrainian)
+- Dark mode with theme persistence
+- Fully responsive design
+- No build system required (except SCSS compilation)
+
 ## Architecture
 
 ### Single-Page Static Site
-- **Main file**: `index.html` - Contains all content and structure (no JavaScript application logic)
+- **Main file**: `index.html` - Contains all content and structure
 - **Styling**: SCSS compiled to CSS, using Bootstrap 5 framework
 - **Icons**: Font Awesome (loaded via local assets)
+- **JavaScript**: Vanilla JS for i18n and dark mode functionality
 - **No build system**: CSS must be compiled manually from SCSS when making style changes
 
 ### Directory Structure
 ```
 .
 ├── index.html              # Main resume page (all content here)
+├── translations.json       # i18n translation strings for all languages
 ├── CNAME                   # GitHub Pages custom domain config
 ├── assets/
 │   ├── css/
-│   │   └── style.css      # Compiled CSS (do not edit directly)
+│   │   ├── style.css      # Compiled Bootstrap CSS (do not edit directly)
+│   │   ├── i18n.css       # Language switcher styles
+│   │   └── dark-mode.css  # Dark mode theme styles
 │   ├── scss/
 │   │   ├── style.scss     # Main stylesheet (edit this)
 │   │   └── bootstrap/     # Bootstrap 5 source files
+│   ├── js/
+│   │   ├── i18n.js        # Internationalization system
+│   │   └── dark-mode.js   # Dark mode toggle logic
 │   ├── fontawesome/       # Font Awesome library (local)
 │   └── images/
 │       └── perfil.jpg     # Profile picture
@@ -50,18 +63,80 @@ sass assets/scss/style.scss assets/css/style.css
 
 Note: No automated build system is configured. Manual compilation is required.
 
+## Internationalization (i18n)
+
+### Supported Languages
+- **Spanish (ES)** 🇪🇸 - Default language
+- **English (EN)** 🇬🇧
+- **Catalan (CA)** 🌐
+- **Ukrainian (UK)** 🇺🇦
+
+### How It Works
+1. **Translation File**: All translations are stored in `translations.json` at the root
+2. **HTML Attributes**: Elements use `data-i18n` attributes to reference translation keys
+   ```html
+   <h2 data-i18n="experience.title">Experiencia laboral</h2>
+   ```
+3. **JavaScript**: `assets/js/i18n.js` handles language switching and DOM updates
+4. **Persistence**: User's language choice is saved in localStorage
+5. **Auto-detection**: Browser language is detected on first visit
+
+### Language Switcher UI
+- **Desktop**: 4 buttons with flag emojis and language codes (in header, secondary-info section)
+- **Mobile**: Dropdown select with all language options
+- **Location**: Inside the header's `secondary-info` section, below the LinkedIn link
+
+### Adding/Editing Translations
+1. Edit `translations.json` - structured as `{ "language": { "section.key": "value" } }`
+2. Add `data-i18n="section.key"` attribute to HTML elements
+3. JavaScript automatically updates content when language changes
+
+## Dark Mode
+
+### Theme System
+- **Default**: Light mode
+- **Toggle**: Sun/moon switch button in header (secondary-info section)
+- **Persistence**: Theme choice saved in localStorage
+- **CSS Variables**: Themes defined using CSS custom properties in `assets/css/dark-mode.css`
+
+### Color Schemes
+**Light Mode** (default):
+- Background: `#fff`
+- Text: `#212529`
+- Header: `#434E5E`
+
+**Dark Mode**:
+- Background: `#1a1a1a`
+- Text: `#e4e4e4`
+- Header: `#2d2d2d`
+
+### Implementation
+1. **HTML**: Toggle button with id `darkModeToggle` in the header
+2. **CSS**: Theme-specific styles using `[data-theme="dark"]` selector
+3. **JavaScript**: `assets/js/dark-mode.js` manages theme switching
+4. **State**: Applied via `data-theme` attribute on `<html>` element
+
+### Customizing Dark Mode
+- Edit color variables in `assets/css/dark-mode.css` under `[data-theme="dark"]`
+- All theme colors use CSS custom properties (e.g., `var(--bg-primary)`)
+
 ## Content Updates
 
 ### Editing Resume Content
 All resume content is in `index.html`. The page uses semantic HTML5 structure:
 
-1. **Header section** (lines 26-50): Name, title, contact info, social links
-2. **Summary section** (lines 52-58): Professional summary paragraph
-3. **Experience section** (lines 61-161): Work history with timeline visualization
-4. **Skills section** (lines 164-247): Technical skills with progress bars
-5. **Education section** (lines 248-269): Academic background
-6. **Languages section** (lines 270-281): Language proficiencies
-7. **Interests section** (lines 282-291): Personal interests
+**Important**: Most text content uses `data-i18n` attributes for multi-language support. To update content:
+1. Edit the text in `index.html` (this will be the fallback/default)
+2. Update corresponding translations in `translations.json` for all languages
+
+**Main sections**:
+1. **Header section**: Name, title, contact info, social links, language switcher, dark mode toggle
+2. **Summary section**: Professional summary paragraph
+3. **Experience section**: Work history with timeline visualization
+4. **Skills section**: Technical skills with progress bars
+5. **Education section**: Academic background
+6. **Languages section**: Language proficiencies
+7. **Interests section**: Personal interests
 
 ### Experience Items Structure
 Each job follows this pattern:
@@ -110,6 +185,18 @@ To deploy changes:
 3. Commit and push to `main` branch
 4. GitHub Pages will automatically deploy
 
-## Language
+## Multi-Language Content
 
-The resume content is in Spanish (lang="es"). When updating content, maintain Spanish language throughout.
+The site supports 4 languages with Spanish as the default:
+
+- **Default language**: Spanish (ES) - `lang="es"` on `<html>` element
+- **Available languages**: ES, EN, CA, UK
+- **Content source**: Primary content in `index.html`, translations in `translations.json`
+
+**When updating content**:
+1. Update the Spanish text in `index.html` (default/fallback)
+2. Add/update the `data-i18n` attribute with the translation key
+3. Update all language versions in `translations.json`
+4. Test all language versions to ensure consistency
+
+**Dynamic `lang` attribute**: The i18n system automatically updates the `<html lang>` attribute based on the selected language.
