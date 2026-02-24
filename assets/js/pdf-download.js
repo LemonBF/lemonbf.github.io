@@ -26,7 +26,7 @@ const pdfDownload = {
     },
 
     /**
-     * Generate and download PDF
+     * Generate and download PDF as a single continuous page
      */
     async generatePDF() {
         if (this.isGenerating) {
@@ -39,7 +39,6 @@ const pdfDownload = {
         this.button.disabled = true;
 
         try {
-            // Get the resume wrapper element
             const element = document.querySelector('.resume-wrapper-inner');
 
             if (!element) {
@@ -47,43 +46,40 @@ const pdfDownload = {
             }
 
             // Hide controls before generating PDF
-            const controlsToHide = [
-                '.controls-wrapper',
-                '.language-switcher'
-            ];
-
+            const controlsToHide = ['.controls-wrapper', '.language-switcher'];
             controlsToHide.forEach(selector => {
                 const el = element.querySelector(selector);
                 if (el) el.style.display = 'none';
             });
 
-            // Get current theme
             const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark';
 
-            // Configure html2pdf options
-            const opt = {
-                margin: 0,
-                filename: 'CV_Dmytro_Holota.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: {
-                    scale: 2,
-                    useCORS: true,
-                    letterRendering: true,
-                    scrollY: 0,
-                    scrollX: 0,
-                    backgroundColor: isDarkMode ? '#1a1a1a' : '#ffffff'
-                },
-                jsPDF: {
-                    unit: 'mm',
-                    format: 'a2', // Large format to fit everything in one page
-                    orientation: 'portrait',
-                    compress: true
-                },
-                pagebreak: { mode: 'avoid-all' }
-            };
+            // Step 1: Render element to canvas
+            const canvas = await html2canvas(element, {
+                scale: 2,
+                useCORS: true,
+                letterRendering: true,
+                scrollY: 0,
+                scrollX: 0,
+                backgroundColor: isDarkMode ? '#1a1a1a' : '#ffffff'
+            });
 
-            // Generate PDF
-            await html2pdf().set(opt).from(element).save();
+            const imgData = canvas.toDataURL('image/jpeg', 0.98);
+
+            // Step 2: Create PDF with exact content dimensions (no page breaks)
+            const pdfWidth = 210; // A4 width in mm
+            const pdfHeight = Math.ceil((canvas.height * pdfWidth) / canvas.width);
+
+            const { jsPDF } = window.jspdf;
+            const pdf = new jsPDF({
+                unit: 'mm',
+                format: [pdfWidth, pdfHeight],
+                orientation: 'portrait',
+                compress: true
+            });
+
+            pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidth, pdfHeight);
+            pdf.save('CV_Dmytro_Holota.pdf');
 
             console.log('PDF generated successfully');
 
@@ -92,17 +88,11 @@ const pdfDownload = {
             alert('Error al generar el PDF. Por favor, intenta de nuevo.');
         } finally {
             // Restore hidden elements
-            const controlsToShow = [
-                '.controls-wrapper',
-                '.language-switcher'
-            ];
-
-            controlsToShow.forEach(selector => {
-                const element = document.querySelector(selector);
-                if (element) element.style.display = '';
+            ['.controls-wrapper', '.language-switcher'].forEach(selector => {
+                const el = document.querySelector(selector);
+                if (el) el.style.display = '';
             });
 
-            // Reset button state
             this.isGenerating = false;
             this.button.classList.remove('loading');
             this.button.disabled = false;
