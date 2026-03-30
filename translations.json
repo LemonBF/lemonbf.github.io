@@ -84,8 +84,9 @@
     },
     "interests": {
       "title": "Intereses",
-      "gaming": "Gaming",
-      "tech": "Tecnología",
+      "selfhosting": "Entusiasta del Self-Hosting",
+      "reading": "Lectura",
+      "chess": "Ajedrez",
       "cooking": "Cocina"
     }
   },
@@ -174,8 +175,9 @@
     },
     "interests": {
       "title": "Interests",
-      "gaming": "Gaming",
-      "tech": "Technology",
+      "selfhosting": "Self-Hosting Enthusiast",
+      "reading": "Reading",
+      "chess": "Chess",
       "cooking": "Cooking"
     }
   },
@@ -264,8 +266,9 @@
     },
     "interests": {
       "title": "Interessos",
-      "gaming": "Jocs",
-      "tech": "Tecnologia",
+      "selfhosting": "Entusiasta del Self-Hosting",
+      "reading": "Lectura",
+      "chess": "Escacs",
       "cooking": "Cuina"
     }
   },
@@ -354,8 +357,9 @@
     },
     "interests": {
       "title": "Інтереси",
-      "gaming": "Ігри",
-      "tech": "Технології",
+      "selfhosting": "Ентузіаст Self-Hosting",
+      "reading": "Читання",
+      "chess": "Шахи",
       "cooking": "Кулінарія"
     }
   }
