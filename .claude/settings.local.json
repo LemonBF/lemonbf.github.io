@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git -C \"C:\\\\Users\\\\dholota\\\\source\\\\repos\\\\lemonbf.github\" remote -v)"
+      "Bash(git -C \"C:\\\\Users\\\\dholota\\\\source\\\\repos\\\\lemonbf.github\" remote -v)",
+      "mcp__Claude_Code_Remote__subscribe_pr_activity",
+      "mcp__Claude_Code_Remote__unsubscribe_pr_activity",
+      "mcp__Claude_Code_Remote__send_later"
     ]
   }
 }
