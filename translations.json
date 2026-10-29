@@ -5,7 +5,7 @@
       "title": "Resume"
     },
     "header": {
-      "jobTitle": "Full Stack Developer"
+      "jobTitle": "Senior Software Engineer"
     },
     "summary": {
       "title": "Resumen",
@@ -13,10 +13,10 @@
     },
     "experience": {
       "title": "Experiencia laboral",
-      "job0_title": "Analista Programador",
+      "job0_title": "Software Engineer",
       "job0_company": "Calsina Carré",
       "job0_period": "Noviembre 2025 - Presente",
-      "job0_description": "Analista Programador responsable del mantenimiento y evolución de los sistemas de la empresa.",
+      "job0_description": "Software Engineer responsable del mantenimiento y evolución de los sistemas de la empresa.",
       "job0_achievements_title": "Funciones y logros destacados:",
       "job0_achievement_1": "Mantenimiento y modernización de software legacy, participando en su migración a nuevas tecnologías.",
       "job0_achievement_2": "Integración con diversas plataformas y servicios corporativos.",
@@ -99,7 +99,7 @@
       "title": "Resume"
     },
     "header": {
-      "jobTitle": "Full Stack Developer"
+      "jobTitle": "Senior Software Engineer"
     },
     "summary": {
       "title": "Summary",
@@ -107,10 +107,10 @@
     },
     "experience": {
       "title": "Work Experience",
-      "job0_title": "Programmer Analyst",
+      "job0_title": "Software Engineer",
       "job0_company": "Calsina Carré",
       "job0_period": "November 2025 - Present",
-      "job0_description": "Programmer Analyst responsible for the maintenance and evolution of the company's systems.",
+      "job0_description": "Software Engineer responsible for the maintenance and evolution of the company's systems.",
       "job0_achievements_title": "Key Functions and Achievements:",
       "job0_achievement_1": "Maintenance and modernization of legacy software, participating in its migration to new technologies.",
       "job0_achievement_2": "Integration with various corporate platforms and services.",
@@ -193,7 +193,7 @@
       "title": "Currículum"
     },
     "header": {
-      "jobTitle": "Desenvolupador Full Stack"
+      "jobTitle": "Senior Software Engineer"
     },
     "summary": {
       "title": "Resum",
@@ -201,10 +201,10 @@
     },
     "experience": {
       "title": "Experiència laboral",
-      "job0_title": "Analista Programador",
+      "job0_title": "Software Engineer",
       "job0_company": "Calsina Carré",
       "job0_period": "Novembre 2025 - Present",
-      "job0_description": "Analista Programador responsable del manteniment i evolució dels sistemes de l'empresa.",
+      "job0_description": "Software Engineer responsable del manteniment i evolució dels sistemes de l'empresa.",
       "job0_achievements_title": "Funcions i assoliments destacats:",
       "job0_achievement_1": "Manteniment i modernització de programari legacy, participant en la seva migració a noves tecnologies.",
       "job0_achievement_2": "Integració amb diverses plataformes i serveis corporatius.",
@@ -287,7 +287,7 @@
       "title": "Резюме"
     },
     "header": {
-      "jobTitle": "Full Stack Розробник"
+      "jobTitle": "Senior Software Engineer"
     },
     "summary": {
       "title": "Резюме",
@@ -295,10 +295,10 @@
     },
     "experience": {
       "title": "Досвід роботи",
-      "job0_title": "Аналітик-Програміст",
+      "job0_title": "Software Engineer",
       "job0_company": "Calsina Carré",
       "job0_period": "Листопад 2025 - Теперішній час",
-      "job0_description": "Аналітик-програміст, відповідальний за обслуговування та розвиток систем компанії.",
+      "job0_description": "Software Engineer, відповідальний за обслуговування та розвиток систем компанії.",
       "job0_achievements_title": "Ключові функції та досягнення:",
       "job0_achievement_1": "Обслуговування та модернізація legacy програмного забезпечення з участю в його міграції на нові технології.",
       "job0_achievement_2": "Інтеграція з різними корпоративними платформами та сервісами.",
